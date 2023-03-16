@@ -1,0 +1,12 @@
+.cast-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+}
+
+.cast-title {
+  color: white;
+}
+
+.cast-list {
+  margin-left: 20px;
+}

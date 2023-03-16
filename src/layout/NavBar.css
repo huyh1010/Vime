@@ -1,0 +1,47 @@
+.nav {
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+
+.nav_bgcolor {
+  background-color: #2b2e4a;
+  width: 100%;
+}
+
+.nav-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-content-one {
+  display: flex;
+  align-items: center;
+}
+.nav-content-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+input {
+  padding: 6px;
+  font-size: 17px;
+}
+
+.user-profile {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
