@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 function UserIcon() {
   const logo = (
     <Box>
-      <img src={usericon} alt="logo" width="50px" />
+      <img src={usericon} alt="logo" width="50px" className="icon-user" />
     </Box>
   );
   return logo;

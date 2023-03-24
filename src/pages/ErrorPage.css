@@ -1,0 +1,33 @@
+.error-container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12rem;
+
+  text-align: center;
+  padding: 20px 20px;
+  color: red;
+}
+
+.error-code {
+  font-size: 8rem;
+}
+
+.error-message {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.error-home {
+  text-decoration: none;
+  padding: 5px 15px;
+  border: 1px solid red;
+  color: white;
+  border-radius: 4px;
+}
+
+.error-home:hover {
+  background-color: aliceblue;
+  color: black;
+  border: transparent;
+}

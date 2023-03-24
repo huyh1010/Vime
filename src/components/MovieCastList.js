@@ -22,8 +22,6 @@ function MovieCastList({ id }) {
     getCast();
   }, [id]);
 
-  console.log(casts);
-
   return (
     <div className="cast-list">
       <h2 className="cast-title">Top Billed Cast</h2>
@@ -31,6 +29,7 @@ function MovieCastList({ id }) {
         {casts &&
           casts?.slice(0, 7).map((cast) => (
             <Card
+              key={cast.id}
               sx={{
                 margin: "0.5rem",
                 borderRadius: "12px",

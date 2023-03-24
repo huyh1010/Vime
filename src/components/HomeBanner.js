@@ -19,7 +19,6 @@ function HomeBanner() {
     fetchMovie();
   }, []);
 
-  console.log(movie);
   function truncate(string, n) {
     return string?.length > n ? string.substr(0, n) + "..." : string;
   }
@@ -32,6 +31,7 @@ function HomeBanner() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "top center",
+        height: "50vh",
       }}
     >
       <div className="banner-contents">

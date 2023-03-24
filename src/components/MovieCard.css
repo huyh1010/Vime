@@ -1,0 +1,32 @@
+.movie-card {
+  width: 200px;
+  border-radius: 12px;
+  transition: transform 450ms;
+}
+
+.movie-card:hover {
+  transform: scale(1.08);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.movie-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+
+  justify-content: center;
+  text-align: center;
+}
+/* 200px, 1fr */
+
+.movie-card-title {
+  color: white;
+  text-align: center;
+}
+
+.movie-cards {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+}

@@ -5,6 +5,7 @@ import apiService from "../app/apiService";
 function MovieRow({ title, fetchUrl, isLargeRow = false }) {
   const [movies, setMovies] = useState([]);
   const navigate = useNavigate();
+
   const base_url = "https://image.tmdb.org/t/p/original";
   useEffect(() => {
     const fetchMovies = async () => {

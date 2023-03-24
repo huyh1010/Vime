@@ -61,7 +61,7 @@
   text-align: center;
 }
 
-.tv-video-container {
+/* .tv-video-container {
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
@@ -81,4 +81,37 @@
   color: white;
   margin-left: 20px;
   margin-top: 10px;
+} */
+
+@media only screen and (max-width: 600px) {
+  .tv-title {
+    font-size: 20px;
+  }
+  .tv-content-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .tv-img {
+    transform: scale(1);
+  }
+  .tv-description {
+    font-size: 13px;
+  }
+
+  .tv-seasons {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .genre-chip {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .director-chip {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
 }

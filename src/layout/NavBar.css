@@ -36,12 +36,44 @@
 }
 
 input {
-  padding: 6px;
+  padding: 4.5px;
   font-size: 17px;
+  border-radius: 3px;
+  border: none;
 }
 
+input:focus {
+  outline: none;
+}
 .user-profile {
   font-size: 16px;
   color: white;
   font-weight: bold;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-contents {
+    display: flex;
+
+    font-size: 12px;
+  }
+
+  input {
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .user-profile {
+    display: none;
+  }
+
+  .icon-user {
+    display: none;
+  }
 }

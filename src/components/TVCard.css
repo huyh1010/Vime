@@ -1,0 +1,29 @@
+.tv-card {
+  width: 200px;
+  border-radius: 12px;
+  transition: transform 450ms;
+}
+
+.tv-card:hover {
+  transform: scale(1.08);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.tv-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 16rem));
+
+  justify-content: center;
+  text-align: center;
+}
+/* 200px, 1fr */
+
+.tv-card-title {
+  color: white;
+  text-align: center;
+}
+
+.tv-cards {
+  margin-bottom: 10px;
+}

@@ -1,7 +1,8 @@
 .banner {
   position: relative;
   object-fit: contain;
-  height: 50vh;
+  /* height: vh;
+  width: vw; */
 }
 
 .banner-contents {
@@ -12,7 +13,7 @@
 }
 
 .banner-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   padding-bottom: 0.3rem;
 }
@@ -48,12 +49,37 @@
   height: 80px;
 }
 
-.banner--fadeBottom {
-  height: 16.4rem;
+/* .banner--fadeBottom {
+  height: 15.8rem;
   background-image: linear-gradient(
     180deg,
     transparent,
     rgba(37, 37, 37, 0.61),
     #111
   );
+} */
+
+@media only screen and (max-width: 600px) {
+  .banner-title {
+    font-size: 1.8rem;
+  }
+  .banner-description {
+    width: 250px;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 924px) {
+  .banner-title {
+    font-size: 2.5rem;
+  }
+
+  .banner-button {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .banner-description {
+    font-size: 1.2rem;
+  }
 }
