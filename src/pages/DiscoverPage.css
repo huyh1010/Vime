@@ -1,0 +1,22 @@
+.form {
+  margin-bottom: 20px;
+  position: relative;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input:focus {
+  outline: none;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    width: 250px;
+  }
+}

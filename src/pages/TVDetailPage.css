@@ -6,8 +6,10 @@
 .tv-content-container {
   max-width: 1024px;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
   margin: auto;
+  margin-bottom: 10px;
 }
 
 .tv-image {
@@ -58,7 +60,9 @@
 }
 
 .tv-description {
-  text-align: center;
+  text-align: left;
+  line-height: 1.5rem;
+  margin-left: 10px;
 }
 
 /* .tv-video-container {

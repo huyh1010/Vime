@@ -6,9 +6,7 @@
 .movie-content-container {
   max-width: 1024px;
   display: flex;
-
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin-bottom: 10px;
   margin: auto;
 }
 
@@ -53,7 +51,9 @@
 }
 
 .movie-description {
-  text-align: center;
+  text-align: left;
+  line-height: 1.5rem;
+  margin-left: 10px;
 }
 
 /* .movie-video-container {

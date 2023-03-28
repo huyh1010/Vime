@@ -4,9 +4,11 @@ import DiscoverMovieBanner from "../components/DiscoverMovieBanner";
 import MovieGenreList from "../components/MovieGenreList";
 import MovieCard from "../components/MovieCard";
 import "../components/MovieCard.css";
-
+import IconButton from "@mui/material/IconButton";
+import SearchIcon from "@mui/icons-material/Search";
 import MoviePagination from "../components/MoviePagination";
 import { useSearchParams } from "react-router-dom";
+import "./DiscoverPage.css";
 
 function DiscoverMoviePage() {
   const [movies, setMovies] = useState([]);
@@ -14,7 +16,9 @@ function DiscoverMoviePage() {
   const [totalPages, setTotalPages] = useState(10);
   const [initialGenre, setInitialGenre] = useState(null);
   const [selectedGenre, setSelectedGenre] = useState([]);
-  let [searchParams] = useSearchParams();
+  // let [searchParams] = useSearchParams();
+
+  let [searchParams, setSearchParams] = useSearchParams({ search: "" });
   const query = searchParams.get("search");
   const API_KEY = "e1f8d9135767f496aea2eddea5fd8521";
 
@@ -98,6 +102,12 @@ function DiscoverMoviePage() {
       name: "Western",
     },
   ];
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let param = e.target[0].value;
+
+    setSearchParams({ ...searchParams, search: param });
+  };
 
   useEffect(() => {
     const getMovie = async () => {
@@ -128,6 +138,28 @@ function DiscoverMoviePage() {
             movies={movies}
             setSelectedGenre={setSelectedGenre}
           />
+          <form onSubmit={handleSubmit} className="form">
+            <input
+              name="search-input"
+              label="search-input"
+              className="search"
+              type="text"
+              placeholder="Search.."
+            />
+            <IconButton
+              type="submit"
+              sx={{
+                p: "10px",
+                color: "black",
+                position: "absolute",
+                top: 0,
+                right: 0,
+              }}
+              aria-label="search"
+            >
+              <SearchIcon />
+            </IconButton>
+          </form>
           <div className="movie-card-grid">
             {movies.map((movie) => (
               <MovieCard movie={movie} />
