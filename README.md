@@ -16,7 +16,7 @@
 
 This is an interactive front-end movie app that is built by using REACT framework and ecosystem.
 
-## <a name="installation">Installation</a>
+## Installation
 
 To have this app running on your local computer, please follow the below steps:
 
