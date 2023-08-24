@@ -16,6 +16,41 @@
 
 This is an interactive front-end movie app that is built by using REACT framework and ecosystem.
 
+## <a name="installation">Installation</a>
+
+To have this app running on your local computer, please follow the below steps:
+
+Clone repository
+
+```javascript
+$ git clone https://github.com/huyh1010/Vime.git
+```
+
+Navigate to the project folder:
+
+```javascript
+$ cd Vime
+```
+
+Install project dependencies:
+
+```javascript
+$ npm install
+```
+
+Set up environment variables (create an .env file). Enter the variable below with the following API link
+
+```javascript
+REACT_APP_BASE_URL = "https://api.themoviedb.org/3";
+
+
+
+Run the project:
+
+```javascript
+$ npm start
+```
+
 ## Materials
 
 The following web application comprises of the following materials and libraries:
